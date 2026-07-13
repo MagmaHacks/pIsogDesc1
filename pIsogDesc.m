@@ -384,7 +384,7 @@ end while;
 
 // use ThreeIsogenyDescent data to calculate, may be an overestimate
 rankCalc := Round(Log(2*#m1+1)/Log(3)) + Round(Log(2*#m2+1)/Log(3));
-// Max may take longer but ties to produce all possible non-equivalent coverings
+// Max may take longer but tries to produce all possible non-equivalent coverings
 // Min may be faster but stops when rankGuess is achieved
 // (rankGuess is predicted to be <= rankCalc)
 r := Max(rankGuess, rankCalc);
